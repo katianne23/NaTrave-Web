@@ -7,6 +7,20 @@
 body{
     @apply text-red-700;
     font-family: 'Cairo', sans-serif;
+   
+}
+body::-webkit-scrollbar {
+    width: 12px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #BB2E57;       
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #AF053F;    
+    border-radius: 20px;       
+    border: 3px solid #BB2E57;  
 }
 input{
     outline: 0;
