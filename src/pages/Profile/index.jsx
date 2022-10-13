@@ -69,7 +69,7 @@ export const Profile=  () => {
 
             <header className="bg-red-500 text-white p-4">
                 <div className="container max-w-3xl flex justify-between">
-                    <img src="../src/assets/logo/logo-fundo-vermelho.svg" className="w-28 md:w-40"/>
+                    <img src="./assets/logo/logo-fundo-vermelho.svg" className="w-28 md:w-40"/>
                     {auth?.user?.id && (
                     <div onClick={logout} className="p-2 cursor-pointer">
                        Sair

@@ -50,7 +50,7 @@ export const Login = () => {
         <>
             <header className="p-4 border-b border-red-300">
                 <div className="container max-w-xl flex justify-center">
-                <img src="../src/assets/logo/logo-fundo-branco.svg" className="w-32 md:w-40"/>
+                <img src="./assets/logo/logo-fundo-branco.svg" className="w-32 md:w-40"/>
                 </div>
             </header>
 

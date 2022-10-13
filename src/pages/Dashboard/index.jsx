@@ -64,7 +64,7 @@ export const Dashboard =  () => {
 
             <header className="bg-red-500 text-white p-4">
                 <div className="container max-w-3xl flex justify-between">
-                    <img src="../src/assets/logo/logo-fundo-vermelho.svg" className="w-28 md:w-40"/>
+                    <img src="./assets/logo/logo-fundo-vermelho.svg" className="w-28 md:w-40"/>
                     <a href={`/${auth?.user?.username}`}>
                     <Icon name="profile" className="w-10"/>
                     </a>
