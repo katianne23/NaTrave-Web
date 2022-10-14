@@ -27,8 +27,18 @@ export const Signup = () => {
                 url:'/users',
                 data: values
             })
+             const result = await axios({
+                method: 'get',
+                baseURL: import.meta.env.VITE_API_URL,
+                url: '/login',
+                auth: {
+                    username: values.email,
+                    password: values.password
+                }
+            })
 
-            localStorage.setItem('auth', JSON.stringify(res.data))
+           setAuth(result.data)
+
         },
         initialValues: {
             name: '',
@@ -42,7 +52,7 @@ export const Signup = () => {
     })
 
     if(auth?.user?.id) { 
-        return <Navigate to="/login" replace={true} />
+        return <Navigate to="/dashboard" replace={true} />
     }
 
     return(
