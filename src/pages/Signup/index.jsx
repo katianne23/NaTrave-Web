@@ -27,17 +27,9 @@ export const Signup = () => {
                 url:'/users',
                 data: values
             })
-             const result = await axios({
-                method: 'get',
-                baseURL: import.meta.env.VITE_API_URL,
-                url: '/login',
-                auth: {
-                    username: values.email,
-                    password: values.password
-                }
-            })
-
-           setAuth(result.data)
+              alert("Usuário cadastrado");
+            
+            localStorage.setItem('auth', JSON.stringify(res.data))
 
         },
         initialValues: {
